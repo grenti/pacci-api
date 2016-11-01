@@ -1,0 +1,34 @@
+{
+  "name": "pacci-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "next",
+    "mongoose": "^4.6.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.0",
+    "babel-eslint": "^7.1.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "babel-tape-runner": "^2.0.1",
+    "blue-tape": "^1.0.0",
+    "eslint": "^3.9.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "istanbul": "^0.4.5",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2"
+  }
+}
