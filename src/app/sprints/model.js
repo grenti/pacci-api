@@ -5,4 +5,6 @@ const sprintSchema = new Schema({
   name: { type: String, required: true }
 })
 
-export default mongoose.model('Sprint', sprintSchema)
+const Sprint = mongoose.model('Sprint', sprintSchema)
+
+export default Sprint

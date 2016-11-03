@@ -5,6 +5,7 @@ import cors from 'koa-cors'
 import mongoose from 'mongoose'
 import config from './config'
 import mongooseConfig from './config/mongoose'
+import routeRegistry from './routeRegistry'
 
 const app = new Koa()
 app.context.db = mongoose
@@ -32,6 +33,10 @@ app.use(async function (ctx, next) {
   console.info(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 
+routeRegistry(app)
+
 const { server } = config
 app.listen(server.port, () =>
-  console.log(`Server started at http:\\localhost:${server.port}`))
+  console.log(`Server started at http://localhost:${server.port}`))
+
+// export default app
